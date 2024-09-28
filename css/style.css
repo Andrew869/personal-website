@@ -43,11 +43,11 @@ header {
     display: none;
 }
 
-.dropbtn:focus{
+.dropbtn:focus {
     background-color: #3CA6A6;
 }
 
-.dropbtn svg{
+.dropbtn svg {
     fill: #F2E3D5;
     width: 30px;
 }
@@ -226,6 +226,7 @@ header {
     text-align: right;
     width: 100%;
     background-color: #F2E3D5;
+    border-radius: 6px;
     /* border-radius: px; */
 }
 
@@ -233,6 +234,7 @@ header {
     background-color: #3CA6A6;
     padding-right: 10px;
     height: 10px;
+    border-radius: 6px;
 }
 
 .es {
@@ -654,58 +656,61 @@ span {
     .dropbtn {
         display: initial;
     }
-    .list_nav{
+
+    .list_nav {
         display: none;
     }
-    .list_nav li{
+
+    .list_nav li {
         width: 100%;
     }
 
-    .list_nav li a{
+    .list_nav li a {
         padding: 20px 0;
         width: 100%;
         text-align: center;
     }
 
-    .main_content>div{
+    .main_content>div {
         margin: 25px 10px;
     }
 
-    .profile{
+    .profile {
         flex-direction: column;
         height: auto;
         margin: 30px 0;
     }
 
-    .profile_image{
+    .profile_image {
         width: 300px;
         height: 300px;
     }
 
-    .profile h1{
+    .profile h1 {
         font-size: 2.5rem;
     }
-    
-    main{
+
+    main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .pasatiempo{
+
+    .pasatiempo {
         margin: 30px auto;
         width: 85%;
     }
 
-    .pasatiempo div:last-child h3{
+    .pasatiempo div:last-child h3 {
         font-size: 1rem;
     }
 
-    .p2{
+    .p2 {
         background-position: 60% 50%
     }
 
-    .p3{
+    .p3 {
         background-position: 70% 50%
     }
 
@@ -735,10 +740,115 @@ span {
     }
 }
 
-.show{
+.show {
     display: flex;
 }
 
-footer p{
+footer p {
     padding: 0 30px;
+}
+
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.form_container {
+    border-radius: 5px;
+    background-color: #012E40;
+    padding: 30px;
+    margin: auto;
+    max-width: 800px;
+    position: relative;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  /* float: right; */
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #026773;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #024959;
+}
+
+#contact_btn{
+    margin: 0 auto;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: #024959; */
+    padding: 5px 20px;
+    /* margin-top: 10px; */
+    border-radius: 6px;
+}
+
+#contact_btn:hover{
+    background-color: #026773;
+}
+
+.selected{
+    text-decoration: underline;
 }

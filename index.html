@@ -18,7 +18,7 @@
         <nav>
             <button  onclick="myFunction()" class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></button>
             <ul id="list_nav" class="list_nav">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="selected" >Inicio</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
                 <li><a href="pasatiempos.html">Pasatiempos</a></li>
             </ul>
@@ -40,7 +40,7 @@
                         <div class="svg_container">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         </div>
-                        <span class="phone">+12 (123) 1234-567</span>
+                        <span class="phone">+12 (123) 1234 567</span>
                     </div>
                     <div class="contact">
                         <div class="svg_container">
@@ -54,9 +54,12 @@
                         </div>
                         <span>www.example.com</span>
                     </div>
+                    <div class="contact">
+                        <a id="contact_btn">Contáctame</a>
+                    </div>
                 </div>
                 <div class="contents">
-                    <h3>idioms</h3>
+                    <h3>idiomas</h3>
                     <div class="language">
                         <p>Español</p>
                         <div class="container_languages">
@@ -84,7 +87,7 @@
                     </div>
                 </div>
                 <div class="contents">
-                    <h3>Educacion</h3>
+                    <h3>Educación</h3>
                     <div class="list_container">
                         <ul>
                             <div class="education">
@@ -103,17 +106,14 @@
             <div class="right_content">
                 <div class="aboutme_container">
                     <h3>Acerca de mi</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quae est eligendi blanditiis alias totam laboriosam minima, neque ab et voluptatem, fugit dolore, esse commodi labore consequatur non nisi eius.
-                    Laudantium, ipsa nemo quo dolorum similique distinctio velit commodi possimus quisquam recusandae iusto ipsum pariatur aperiam praesentium consequuntur provident molestias modi quia unde. Pariatur ea, dolore eligendi delectus laboriosam voluptatum.
-                    Facilis sint recusandae esse quasi id quidem, dolorem similique consectetur nostrum, officia ut doloribus repudiandae error alias. Possimus neque officiis, voluptatum sit a temporibus. Inventore obcaecati delectus voluptas fugiat ratione.
-                    Voluptates, fugit, rem debitis dolor optio illo earum consequatur illum aut repellendus vel vitae. Quod, error debitis repellat explicabo laboriosam repudiandae amet illo laudantium quidem! Quisquam quae rerum doloremque dolorem.</p>
+                    <p>Soy un ingeniero en Sistemas Computacionales. Mis lenguajes de programación favoritos son: C++ y Java, odio la sintaxis de Python. Actualmente aprendiendo creación de sistemas web. Soy Linux user, la distribución que utilizó actualmente es ArchLinux. Me considero una persona responsable y ordenada, donde me comprometo siempre en sacar un buen desempeño en cualquier actividad o proyecto que realice.</p>
                 </div>
                 <div class="eperience_container">
                     <h3>Experiencia laboral</h3>
                     <div class="timeline">
                         <div class="container left">
                             <div class="content">
-                                <h2>2016</h2>
+                                <h2>2019</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi velit laudantium excepturi
                                     reprehenderit incidunt maxime ex, repudiandae voluptate mollitia nobis hic, vero,
                                     reiciendis nihil esse voluptates asperiores? Veniam, rerum molestiae!</p>
@@ -121,7 +121,7 @@
                         </div>
                         <div class="container right">
                             <div class="content">
-                                <h2>2017</h2>
+                                <h2>2020</h2>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, dolorem
                                     temporibus earum obcaecati ducimus nostrum sint beatae, ipsa quasi odio impedit quis,
                                     accusamus ab error qui harum dolor tempora iusto.</p>
@@ -129,12 +129,34 @@
                         </div>
                         <div class="container left">
                             <div class="content">
-                                <h2>2019</h2>
+                                <h2>2021</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero atque voluptatibus tenetur aliquam nemo similique explicabo minus distinctio eligendi eius quos saepe fuga, eveniet officiis quisquam autem ipsum cum nesciunt.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="form_container">
+                <span class="close">&times;</span>
+                <form action="#">
+              
+                  <label for="fname">Nombre</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Tú nombre..">
+              
+                  <label for="lname">Apellidos</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Tús apellidos..">
+              
+                  <label for="email">Correo electrónico</label>
+                  <input type="email" name="email" id="email" placeholder="tú correo...">
+              
+                  <label for="subject">Asunto</label>
+                  <textarea id="subject" name="subject" placeholder="escribe algo..." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Enviar">
+              
+                </form>
             </div>
         </div>
         <script src="js/dropDown.js"></script>
